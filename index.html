@@ -7,7 +7,7 @@
 <meta name="description" content="Gundam Battle Assault 2, running in the browser (WebAssembly and WebGL2).">
 <title>Gundam Battle Assault 2</title>
 <link rel="icon" href="data:,">
-<link rel="stylesheet" href="gba2-page.dfeffe1e.css">
+<link rel="stylesheet" href="gba2-page.26d3981b.css">
 </head>
 <body>
 <div id="app">
@@ -28,6 +28,11 @@
   <nav id="bar-bottom" aria-label="Game controls">
     <button id="btn-fullscreen" type="button" title="Fullscreen (the game picture fills the screen)">Fullscreen</button>
     <button id="btn-sound" type="button" aria-pressed="false" title="Mute or unmute the sound">Sound on</button>
+    <span id="volume-box" class="volume">
+      <span class="volume-label" aria-hidden="true">Volume</span>
+      <input id="volume" type="range" min="0" max="100" step="1" value="100" aria-label="Volume" aria-valuetext="100 percent" title="Volume">
+      <output id="volume-text" for="volume" aria-hidden="true">100%</output>
+    </span>
     <button id="btn-integer" type="button" aria-pressed="true" title="Integer scaling keeps every game pixel the same size; off fills the window">Integer scaling: on</button>
     <button id="btn-online" type="button" aria-expanded="false" aria-controls="online" title="Start the game first" disabled>Online</button>
     <button id="btn-help" type="button" aria-expanded="false" aria-controls="help">Controls</button>
@@ -111,6 +116,7 @@
         <tr><th>Select</th><td>Backspace</td><td>\</td></tr>
       </tbody>
     </table>
+    <p>The volume slider is in the bar below the game: drag it, or Tab to it and use the arrow keys (the game ignores the keyboard while the slider has the focus; Escape gives it back). The Sound button mutes.</p>
     <p>In menus A (Z for player 2) confirms and S (X) cancels. A gamepad works as well: the first two controllers are players 1 and 2 (press a button on it once so the browser shows it to the page).</p>
     <table>
       <tbody>
@@ -125,7 +131,7 @@
   </section>
   <noscript><p class="noscript">This page needs JavaScript, WebAssembly and WebGL2 (or a browser that can draw a canvas) to run the game.</p></noscript>
 </div>
-<script id="gba2-build" type="application/json">{"schema":1,"id":"38cce3b03b22","engine":{"js":"gba2.f417b65c.js","wasm":"gba2.498a98b0.wasm"},"assets":{"game":{"base":"assets/game/","index":{"path":"manifest.json","bytes":616128,"sha256":"e35321fb59d269785c060c479db37cb6bc77b58183b0bb9282967c1ea82c4efb"}},"sprites2x":{"base":"assets/sprites2x/","index":{"path":"index.json","bytes":9041,"sha256":"609671ac84d84de3d3d1bd93855bd117574fd8b487ed6231d9bc3cfca20bbac4"}}}}</script>
-<script src="gba2-page.a462d774.js"></script>
+<script id="gba2-build" type="application/json">{"schema":1,"id":"13c32d7d8fba","engine":{"js":"gba2.f417b65c.js","wasm":"gba2.498a98b0.wasm"},"assets":{"game":{"base":"assets/game/","index":{"path":"manifest.json","bytes":616128,"sha256":"e35321fb59d269785c060c479db37cb6bc77b58183b0bb9282967c1ea82c4efb"}},"sprites2x":{"base":"assets/sprites2x/","index":{"path":"index.json","bytes":9041,"sha256":"609671ac84d84de3d3d1bd93855bd117574fd8b487ed6231d9bc3cfca20bbac4"}}}}</script>
+<script src="gba2-page.dea87266.js"></script>
 </body>
 </html>
