@@ -7,7 +7,7 @@
 <meta name="description" content="Gundam Battle Assault 2, running in the browser (WebAssembly and WebGL2).">
 <title>Gundam Battle Assault 2</title>
 <link rel="icon" href="data:,">
-<link rel="stylesheet" href="gba2-page.c48508e7.css">
+<link rel="stylesheet" href="gba2-page.dfeffe1e.css">
 </head>
 <body>
 <div id="app">
@@ -37,22 +37,32 @@
   </nav>
   <section id="online" hidden aria-label="Online play">
     <h2>Play online</h2>
-    <p class="online-intro">Two players, one match. There is no server: you and your friend swap two codes (in any chat program) and the game connects you directly. Both of you need this page open, in the same version.</p>
+    <p class="online-intro">Two players, one match. The host gets a short code and tells it to a friend, who types it in: the two pages find each other and connect directly, and the game itself never goes through a server. (A free public relay, ntfy.sh, passes the connection details for a moment. If it cannot be reached, you can send two long codes by hand instead.) Both of you need this page open, in the same version.</p>
     <div id="online-choose" class="online-step">
       <button id="online-host" type="button">Host a match</button>
       <button id="online-join" type="button">Join a match</button>
     </div>
     <div id="online-host-box" class="online-step" hidden>
-      <label for="online-offer">1. Send this code to your friend</label>
-      <div class="online-row"><textarea id="online-offer" readonly rows="3" spellcheck="false" autocomplete="off"></textarea><button id="online-copy-offer" type="button">Copy</button></div>
-      <label for="online-answer-in">2. Paste the code your friend sends back</label>
-      <div class="online-row"><textarea id="online-answer-in" rows="3" spellcheck="false" autocomplete="off" placeholder="GBA2-1a.…"></textarea><button id="online-connect" type="button">Connect</button></div>
+      <div id="online-room" hidden>
+        <label for="online-room-code">Tell your friend this code</label>
+        <div class="online-row"><output id="online-room-code" class="room-code" aria-live="polite"></output><button id="online-copy-room" type="button">Copy</button></div>
+        <p>They press <em>Join a match</em> and type it. The match starts as soon as they have.</p>
+      </div>
+      <details id="online-long" open>
+        <summary>The long code (if the short code does not work)</summary>
+        <label for="online-offer">1. Send this code to your friend</label>
+        <div class="online-row"><textarea id="online-offer" readonly rows="3" spellcheck="false" autocomplete="off"></textarea><button id="online-copy-offer" type="button">Copy</button></div>
+        <label for="online-answer-in">2. Paste the code your friend sends back</label>
+        <div class="online-row"><textarea id="online-answer-in" rows="3" spellcheck="false" autocomplete="off" placeholder="GBA2-2a.…"></textarea><button id="online-connect" type="button">Connect</button></div>
+      </details>
     </div>
     <div id="online-join-box" class="online-step" hidden>
-      <label for="online-offer-in">1. Paste the code the host sent you</label>
-      <div class="online-row"><textarea id="online-offer-in" rows="3" spellcheck="false" autocomplete="off" placeholder="GBA2-1o.…"></textarea><button id="online-answer" type="button">Create answer</button></div>
-      <label for="online-answer-out">2. Send this answer back to the host</label>
-      <div class="online-row"><textarea id="online-answer-out" readonly rows="3" spellcheck="false" autocomplete="off"></textarea><button id="online-copy-answer" type="button">Copy</button></div>
+      <label for="online-offer-in">1. Type the short code your friend sees, or paste their long code</label>
+      <div class="online-row"><textarea id="online-offer-in" rows="2" spellcheck="false" autocomplete="off" autocapitalize="characters" placeholder="K7QF   or   GBA2-2o.…"></textarea><button id="online-answer" type="button">Join</button></div>
+      <div id="online-answer-box" hidden>
+        <label for="online-answer-out">2. Send this answer back to the host</label>
+        <div class="online-row"><textarea id="online-answer-out" readonly rows="3" spellcheck="false" autocomplete="off"></textarea><button id="online-copy-answer" type="button">Copy</button></div>
+      </div>
     </div>
     <details id="online-settings">
       <summary>Settings (the host chooses; the guest plays with them)</summary>
@@ -87,9 +97,9 @@
     </details>
     <p id="online-status" role="status" aria-live="polite"></p>
     <div class="online-actions"><button id="online-leave" type="button" hidden>Cancel</button></div>
-    <p class="online-note">Uses a direct connection between the two computers (WebRTC with a public STUN server); there is no relay, so a few strict networks cannot connect. Your save and options stay out of the match, and the game you are playing now is closed when the match starts (it begins again from the start afterwards). Pause, step and reset are off online. If you switch to another tab or window, the other player's game waits for you.</p>
+    <p class="online-note">Uses a direct connection between the two computers (WebRTC with a public STUN server); the game itself is never relayed through a server, so a few strict networks cannot connect. Your save and options stay out of the match, and the game you are playing now is closed when the match starts (it begins again from the start afterwards). Pause, step and reset are off online. If you switch to another tab or window, the other player's game waits for you.</p>
   </section>
-  <div id="online-chip" hidden role="status"><span id="online-chip-text"></span><button id="online-chip-replay" type="button" title="Save the buttons both players pressed so far as a replay file" hidden>Save replay</button><button id="online-chip-leave" type="button">Leave</button></div>
+  <div id="online-chip" hidden role="status"><span id="online-chip-text"></span><button id="online-chip-stats" type="button" title="Copy the network statistics of this match (round trips, rollbacks, queue) to the clipboard, to send to whoever looks into lag">Copy stats</button><button id="online-chip-replay" type="button" title="Save the buttons both players pressed so far as a replay file" hidden>Save replay</button><button id="online-chip-leave" type="button">Leave</button></div>
   <section id="help" hidden aria-label="Controls">
     <h2>Controls</h2>
     <table>
@@ -115,7 +125,7 @@
   </section>
   <noscript><p class="noscript">This page needs JavaScript, WebAssembly and WebGL2 (or a browser that can draw a canvas) to run the game.</p></noscript>
 </div>
-<script id="gba2-build" type="application/json">{"schema":1,"id":"7be197138148","engine":{"js":"gba2.afc8f9db.js","wasm":"gba2.8de68501.wasm"},"assets":{"game":{"base":"assets/game/","index":{"path":"manifest.json","bytes":616128,"sha256":"e35321fb59d269785c060c479db37cb6bc77b58183b0bb9282967c1ea82c4efb"}},"sprites2x":{"base":"assets/sprites2x/","index":{"path":"index.json","bytes":9041,"sha256":"609671ac84d84de3d3d1bd93855bd117574fd8b487ed6231d9bc3cfca20bbac4"}}}}</script>
-<script src="gba2-page.f58637d2.js"></script>
+<script id="gba2-build" type="application/json">{"schema":1,"id":"249c23f354cd","engine":{"js":"gba2.afc8f9db.js","wasm":"gba2.8de68501.wasm"},"assets":{"game":{"base":"assets/game/","index":{"path":"manifest.json","bytes":616128,"sha256":"e35321fb59d269785c060c479db37cb6bc77b58183b0bb9282967c1ea82c4efb"}},"sprites2x":{"base":"assets/sprites2x/","index":{"path":"index.json","bytes":9041,"sha256":"609671ac84d84de3d3d1bd93855bd117574fd8b487ed6231d9bc3cfca20bbac4"}}}}</script>
+<script src="gba2-page.cc20a685.js"></script>
 </body>
 </html>
