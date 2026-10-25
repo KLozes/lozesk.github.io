@@ -1,15 +1,15 @@
 {
- "id": "13c32d7d8fba",
- "engine_js": "gba2.f417b65c.js",
+ "id": "d1f607a5e8a2",
+ "engine_js": "gba2.1082a6a4.js",
  "engine_js_bytes": 171943,
- "engine_wasm": "gba2.498a98b0.wasm",
- "engine_wasm_bytes": 2283928,
+ "engine_wasm": "gba2.52d4bde1.wasm",
+ "engine_wasm_bytes": 2285764,
  "page_bytes": 185518,
  "game_files": 1888,
  "game_bytes": 69219962,
  "sprites2x_files": 68,
  "sprites2x_bytes": 53689834,
  "total_files": 1968,
- "total_bytes": 125607761,
+ "total_bytes": 125609597,
  "largest_file_bytes": 5215530
 }
