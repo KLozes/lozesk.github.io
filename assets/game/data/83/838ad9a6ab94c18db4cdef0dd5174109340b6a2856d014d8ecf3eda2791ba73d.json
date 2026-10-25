@@ -1,0 +1,20 @@
+{
+"schema": 1, "kind": "vab-header", "header_bytes": 3616,
+"version": 7, "id": 0, "declared_size": 17632,
+"programs": 2, "tones": 6, "samples": 6,
+"volume": 127, "pan": 64, "attributes": [0, 0],
+"prefix_bytes": 0,
+"sample_bytes": [2528, 2208, 2256, 2000, 1888, 3136],
+"program_table": [
+ {"index": 0, "tones": 1, "volume": 64, "priority": 255, "mode": 255, "pan": 64, "tone_table": [
+  {"tone": 0, "priority": 1, "mode": 4, "volume": 112, "pan": 64, "center": 84, "shift": 0, "key_min": 60, "key_max": 60, "vibrato_width": 0, "vibrato_time": 0, "portamento_width": 0, "portamento_time": 0, "pitch_bend_min": 16, "pitch_bend_max": 16, "adsr1": 33023, "adsr2": 57315, "program": 0, "sample": 1}
+ ]},
+ {"index": 1, "tones": 5, "volume": 127, "priority": 255, "mode": 255, "pan": 64, "tone_table": [
+  {"tone": 0, "priority": 1, "mode": 0, "volume": 127, "pan": 64, "center": 96, "shift": 20, "key_min": 60, "key_max": 60, "vibrato_width": 0, "vibrato_time": 0, "portamento_width": 0, "portamento_time": 0, "pitch_bend_min": 16, "pitch_bend_max": 16, "adsr1": 33023, "adsr2": 57315, "program": 1, "sample": 2},
+  {"tone": 1, "priority": 1, "mode": 0, "volume": 127, "pan": 64, "center": 97, "shift": 20, "key_min": 61, "key_max": 61, "vibrato_width": 0, "vibrato_time": 0, "portamento_width": 0, "portamento_time": 0, "pitch_bend_min": 16, "pitch_bend_max": 16, "adsr1": 33023, "adsr2": 57315, "program": 1, "sample": 3},
+  {"tone": 2, "priority": 1, "mode": 0, "volume": 127, "pan": 64, "center": 99, "shift": 20, "key_min": 63, "key_max": 63, "vibrato_width": 0, "vibrato_time": 0, "portamento_width": 0, "portamento_time": 0, "pitch_bend_min": 16, "pitch_bend_max": 16, "adsr1": 33023, "adsr2": 57315, "program": 1, "sample": 4},
+  {"tone": 3, "priority": 1, "mode": 0, "volume": 127, "pan": 64, "center": 100, "shift": 20, "key_min": 64, "key_max": 64, "vibrato_width": 0, "vibrato_time": 0, "portamento_width": 0, "portamento_time": 0, "pitch_bend_min": 16, "pitch_bend_max": 16, "adsr1": 33023, "adsr2": 57315, "program": 1, "sample": 5},
+  {"tone": 4, "priority": 1, "mode": 0, "volume": 127, "pan": 64, "center": 103, "shift": 20, "key_min": 67, "key_max": 67, "vibrato_width": 0, "vibrato_time": 0, "portamento_width": 0, "portamento_time": 0, "pitch_bend_min": 16, "pitch_bend_max": 16, "adsr1": 33023, "adsr2": 57315, "program": 1, "sample": 6}
+ ]}
+]
+}

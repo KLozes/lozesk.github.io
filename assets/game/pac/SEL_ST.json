@@ -1,0 +1,16 @@
+{
+ "schema": 1,
+ "file": "DATA/SEL_ST.PAC",
+ "normalized_bytes": 267296,
+ "normalized_sha256": "53a9d0b4b134bd490ebffc6e8a2d5c2bf6ab61a627439531bfc9d54a87d2659d",
+ "records": [
+  {"t":"leaf","lzs":false,"ref":"tim:5d7112028ef80b515aa817a25338aef23e77752fcba996c97b72e9d40ea343de"},
+  {"t":"leaf","lzs":false,"ref":"tim:8ab1c3ca72a9c30950d850ddf7e45774fdda0d9298e812ed907d3e99fac8ff26"},
+  {"t":"leaf","lzs":false,"ref":"tim:334f4844061e7b11911dd6e6662d1f16a54e7bb58d0c0ecff4ac2a3e68f81039"},
+  {"t":"leaf","lzs":false,"ref":"tim:25e2d42eaa9044a12e94adadcc64cb39d2bd685dd4783c887c24dbe4c9ab6356"},
+  {"t":"leaf","lzs":false,"ref":"tim:9a0b82e6aaa978b6a5bd613983342583f30c482c09ee0d35e0e0db0416e0768c"},
+  {"t":"leaf","lzs":false,"ref":"tim:7e48ae49a1c5dbd7fb52582849907a2198123cdcd0c593e4216d6e8713743c62"},
+  {"t":"leaf","lzs":false,"ref":"tim:5cfef713b2a7c02a1a5ad52041718aec71547f6beeab8d764f03bb5fbbfa9f20"},
+  {"t":"leaf","lzs":false,"ref":"tim:f44cfe1b0587e4b8c545f7104f12d18345eb84335861eadd9f0a700b0a0d8b74"}
+ ]
+}

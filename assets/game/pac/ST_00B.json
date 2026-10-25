@@ -1,0 +1,69 @@
+{
+ "schema": 1,
+ "file": "DATA/ST_00B.PAC",
+ "normalized_bytes": 409104,
+ "normalized_sha256": "3d6f0584f656a7916092f2cb1e4921e38eaec7370140f89e5daf19849aa6c80b",
+ "records": [
+  {"t":"marker","category":16},
+  {"t":"archive","lzs":false,"records":[
+   {"t":"marker","category":19},
+   {"t":"leaf","lzs":true,"ref":"bin:3cb9ec76cc861c5ce5be60395e28128b18d12d839ff97fd66b9034b50972835c"},
+   {"t":"marker","category":20},
+   {"t":"leaf","lzs":true,"ref":"bin:78b2fb1cfe1b0a9d8d13bfe858fd6152d968d7eb778d18df26dde1fae9ce397e"},
+   {"t":"marker","category":21},
+   {"t":"archive","lzs":false,"records":[
+    {"t":"marker","category":16},
+    {"t":"leaf","lzs":true,"ref":"tim:5ff6200d1924d94cf597acf38283d9f0756dc4a79e7926dca56a09350fb13093"},
+    {"t":"marker","category":17},
+    {"t":"leaf","lzs":true,"ref":"tmd:b78c67624f17ef043d1f47ac0695ee9d526546d941e5ea48151588e82f7d1b04"},
+    {"t":"leaf","lzs":true,"ref":"tmd:b3ea5ea38cf7fe0e7b3787ce4a94ced1d69bd4e34424c7e8c129f97e26ec72e5"},
+    {"t":"leaf","lzs":true,"ref":"tmd:fb437551bad0a9d222b6c453ba218d6ed21df1b38a66409d555d14f28395a6f7"}
+   ]},
+   {"t":"marker","category":48},
+   {"t":"leaf","lzs":true,"ref":"bin:920ccda8e81868b06b579e383a8bdd9b6614d7a0852e8745c6ec2330082087ac"}
+  ]},
+  {"t":"marker","category":32},
+  {"t":"archive","lzs":false,"records":[
+   {"t":"marker","category":81},
+   {"t":"leaf","lzs":true,"ref":"tim:cfeffe653bb8d38102b0a35c608e44e584ef6d806109de45a1bd101a67f12906"},
+   {"t":"marker","category":82},
+   {"t":"leaf","lzs":true,"ref":"tim:2e9766c0341c4ce118405c14f5655149daf4024a80653997d72dc03cfb2a8266"},
+   {"t":"marker","category":84},
+   {"t":"leaf","lzs":true,"ref":"tim:a378b1729a3b818567c92d2591891738f2ac1716335fc17ff73f2116a737c643"},
+   {"t":"marker","category":48},
+   {"t":"leaf","lzs":true,"ref":"bin:94dbc141aa1ab1ccbba14339fcc3a9f380b468ea823e726c75fe43345531686d"},
+   {"t":"leaf","lzs":true,"ref":"bin:7a428ce3587fbe25bb1ee6e5fd9af561a99ea4c0312b1e4b040e802c110170cc"},
+   {"t":"leaf","lzs":true,"ref":"bin:bef5483d07edcc41d6d26cef1ba84304f558798fa52ae46593e0a04b0547c822"},
+   {"t":"leaf","lzs":true,"ref":"bin:8c23f1cf37d6b0f139e8bc50dd69a7805439fd09b2977b63a7b8a3e37cbd9c9b"},
+   {"t":"marker","category":49},
+   {"t":"leaf","lzs":true,"ref":"bin:6afb38cd041659cac9ea089b5c30a0bbb15885c874badd5add05027116938882"},
+   {"t":"marker","category":64},
+   {"t":"leaf","lzs":true,"ref":"bin:81074b0e490cc1c4ed80adce9239c4348e541bdc1c61b3714bb3cf272300d5c3"},
+   {"t":"leaf","lzs":true,"ref":"bin:81074b0e490cc1c4ed80adce9239c4348e541bdc1c61b3714bb3cf272300d5c3"},
+   {"t":"marker","category":66},
+   {"t":"leaf","lzs":true,"ref":"tim:c1107dc197b15867c9659716a2e2c2c3ea1c542373465a278d09ff72e61a8966"},
+   {"t":"leaf","lzs":true,"ref":"tim:a05dc0b3667f646edc095bddbe09373ea94752fa4a60ec1f985eaadbaebd6cba"},
+   {"t":"marker","category":129},
+   {"t":"archive","lzs":true,"records":[
+    {"t":"leaf","lzs":false,"ref":"bin:b656daccea7934cb2421c5d171d21c024383e47f88faf404cb29aa3d81cf5283"},
+    {"t":"leaf","lzs":false,"ref":"bin:73b132f35c26be7150e08537d194e5cfa3f29ab0b3aff18c3f84053677e66a30"},
+    {"t":"leaf","lzs":false,"ref":"bin:6ef49da86bc4c58eb773014b20c21c659e49f7513179c842b490e36d74c1520f"}
+   ]}
+  ]},
+  {"t":"marker","category":48},
+  {"t":"archive","lzs":false,"records":[
+   {"t":"marker","category":32},
+   {"t":"leaf","lzs":true,"ref":"tim:d1fb2d2f7d6682a88e6e1441d4295746677158fae3e1f887a5777d6cfb227f40"},
+   {"t":"leaf","lzs":true,"ref":"tim:72c0d33ece808c10f88adbe083e0a80ef738cfa92b9e69d1c66ff4c1921a4e7d"},
+   {"t":"leaf","lzs":true,"ref":"tim:57cf403551b52c1e05403a9ce4609446c1df53cfc56b5145fee35c05b375c3fb"},
+   {"t":"marker","category":33},
+   {"t":"leaf","lzs":true,"ref":"tmd:e8fda5036e4d1410119f5cc68c78d17076f5ebdf039df8a467b7a971ddafc14c"},
+   {"t":"leaf","lzs":true,"ref":"tmd:c818cb7ac8096436d3eb8014cf4faff0ced1e1eac2ce3cf6404f318b75bc471d"},
+   {"t":"leaf","lzs":true,"ref":"tmd:721e30ad9f30db3ec96ef3c4ee13060d1592cc881df134ee4b99a8e3de16f561"},
+   {"t":"leaf","lzs":true,"ref":"tmd:af58c827a4599cefe4a749826016daf9dc72612cd7310dfb1f3382cd5557ec00"},
+   {"t":"leaf","lzs":true,"ref":"tmd:f18af85f38776eccaf9944846f950c69425d20da4ddaf87b2031e32b74a76313"},
+   {"t":"marker","category":34},
+   {"t":"leaf","lzs":true,"ref":"bin:07e042504d9030fb4efa4ebb15de5502558cfdcb560d2f8c8b7d42ec017b02cb"}
+  ]}
+ ]
+}

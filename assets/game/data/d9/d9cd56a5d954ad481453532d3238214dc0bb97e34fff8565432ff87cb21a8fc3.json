@@ -1,0 +1,69 @@
+{
+"schema": 1, "kind": "vab-header", "header_bytes": 8736,
+"version": 7, "id": 0, "declared_size": 134960,
+"programs": 12, "tones": 35, "samples": 22,
+"volume": 104, "pan": 64, "attributes": [0, 0],
+"prefix_bytes": 0,
+"sample_bytes": [1376, 3696, 2000, 3504, 6320, 13712, 4160, 4544, 5088, 4656, 11824, 11792, 5904, 8992, 9056, 5008, 3168, 1968, 2416, 2752, 8576, 5712],
+"program_table": [
+ {"index": 0, "tones": 11, "volume": 127, "priority": 255, "mode": 255, "pan": 64, "tone_table": [
+  {"tone": 0, "priority": 1, "mode": 0, "volume": 127, "pan": 64, "center": 78, "shift": 57, "key_min": 60, "key_max": 60, "vibrato_width": 0, "vibrato_time": 0, "portamento_width": 0, "portamento_time": 0, "pitch_bend_min": 16, "pitch_bend_max": 16, "adsr1": 33023, "adsr2": 57315, "program": 0, "sample": 1},
+  {"tone": 1, "priority": 1, "mode": 0, "volume": 127, "pan": 64, "center": 80, "shift": 57, "key_min": 62, "key_max": 62, "vibrato_width": 0, "vibrato_time": 0, "portamento_width": 0, "portamento_time": 0, "pitch_bend_min": 16, "pitch_bend_max": 16, "adsr1": 33020, "adsr2": 52515, "program": 0, "sample": 2},
+  {"tone": 2, "priority": 1, "mode": 4, "volume": 127, "pan": 64, "center": 82, "shift": 57, "key_min": 64, "key_max": 64, "vibrato_width": 0, "vibrato_time": 0, "portamento_width": 0, "portamento_time": 0, "pitch_bend_min": 16, "pitch_bend_max": 16, "adsr1": 33023, "adsr2": 57315, "program": 0, "sample": 3},
+  {"tone": 3, "priority": 1, "mode": 0, "volume": 32, "pan": 100, "center": 60, "shift": 57, "key_min": 42, "key_max": 42, "vibrato_width": 0, "vibrato_time": 0, "portamento_width": 0, "portamento_time": 0, "pitch_bend_min": 16, "pitch_bend_max": 16, "adsr1": 33023, "adsr2": 52067, "program": 0, "sample": 4},
+  {"tone": 4, "priority": 1, "mode": 0, "volume": 32, "pan": 100, "center": 64, "shift": 57, "key_min": 46, "key_max": 46, "vibrato_width": 0, "vibrato_time": 0, "portamento_width": 0, "portamento_time": 0, "pitch_bend_min": 16, "pitch_bend_max": 16, "adsr1": 33023, "adsr2": 57315, "program": 0, "sample": 6},
+  {"tone": 5, "priority": 1, "mode": 0, "volume": 88, "pan": 40, "center": 67, "shift": 57, "key_min": 49, "key_max": 49, "vibrato_width": 0, "vibrato_time": 0, "portamento_width": 0, "portamento_time": 0, "pitch_bend_min": 16, "pitch_bend_max": 16, "adsr1": 33023, "adsr2": 52771, "program": 0, "sample": 5},
+  {"tone": 6, "priority": 1, "mode": 0, "volume": 127, "pan": 64, "center": 54, "shift": 57, "key_min": 36, "key_max": 36, "vibrato_width": 0, "vibrato_time": 0, "portamento_width": 0, "portamento_time": 0, "pitch_bend_min": 16, "pitch_bend_max": 16, "adsr1": 33023, "adsr2": 57315, "program": 0, "sample": 7},
+  {"tone": 7, "priority": 1, "mode": 0, "volume": 127, "pan": 64, "center": 56, "shift": 57, "key_min": 38, "key_max": 38, "vibrato_width": 0, "vibrato_time": 0, "portamento_width": 0, "portamento_time": 0, "pitch_bend_min": 16, "pitch_bend_max": 16, "adsr1": 33023, "adsr2": 57315, "program": 0, "sample": 8},
+  {"tone": 8, "priority": 1, "mode": 0, "volume": 127, "pan": 48, "center": 63, "shift": 57, "key_min": 45, "key_max": 45, "vibrato_width": 0, "vibrato_time": 0, "portamento_width": 0, "portamento_time": 0, "pitch_bend_min": 16, "pitch_bend_max": 16, "adsr1": 33023, "adsr2": 57315, "program": 0, "sample": 9},
+  {"tone": 9, "priority": 1, "mode": 0, "volume": 127, "pan": 16, "center": 63, "shift": 57, "key_min": 41, "key_max": 41, "vibrato_width": 0, "vibrato_time": 0, "portamento_width": 0, "portamento_time": 0, "pitch_bend_min": 16, "pitch_bend_max": 16, "adsr1": 33023, "adsr2": 57315, "program": 0, "sample": 9},
+  {"tone": 10, "priority": 1, "mode": 0, "volume": 127, "pan": 64, "center": 59, "shift": 0, "key_min": 59, "key_max": 59, "vibrato_width": 0, "vibrato_time": 0, "portamento_width": 0, "portamento_time": 0, "pitch_bend_min": 16, "pitch_bend_max": 16, "adsr1": 33023, "adsr2": 57315, "program": 0, "sample": 18}
+ ]},
+ {"index": 1, "tones": 7, "volume": 80, "priority": 255, "mode": 255, "pan": 64, "tone_table": [
+  {"tone": 0, "priority": 1, "mode": 4, "volume": 96, "pan": 64, "center": 90, "shift": 57, "key_min": 60, "key_max": 60, "vibrato_width": 0, "vibrato_time": 0, "portamento_width": 0, "portamento_time": 0, "pitch_bend_min": 16, "pitch_bend_max": 16, "adsr1": 33023, "adsr2": 57315, "program": 1, "sample": 11},
+  {"tone": 1, "priority": 1, "mode": 4, "volume": 96, "pan": 64, "center": 96, "shift": 57, "key_min": 61, "key_max": 61, "vibrato_width": 0, "vibrato_time": 0, "portamento_width": 0, "portamento_time": 0, "pitch_bend_min": 16, "pitch_bend_max": 16, "adsr1": 33023, "adsr2": 57315, "program": 1, "sample": 11},
+  {"tone": 2, "priority": 1, "mode": 4, "volume": 96, "pan": 64, "center": 92, "shift": 57, "key_min": 62, "key_max": 62, "vibrato_width": 0, "vibrato_time": 0, "portamento_width": 0, "portamento_time": 0, "pitch_bend_min": 16, "pitch_bend_max": 16, "adsr1": 33023, "adsr2": 57315, "program": 1, "sample": 12},
+  {"tone": 3, "priority": 1, "mode": 4, "volume": 96, "pan": 64, "center": 98, "shift": 57, "key_min": 63, "key_max": 63, "vibrato_width": 0, "vibrato_time": 0, "portamento_width": 0, "portamento_time": 0, "pitch_bend_min": 16, "pitch_bend_max": 16, "adsr1": 33023, "adsr2": 57315, "program": 1, "sample": 12},
+  {"tone": 4, "priority": 1, "mode": 4, "volume": 80, "pan": 64, "center": 87, "shift": 57, "key_min": 64, "key_max": 64, "vibrato_width": 0, "vibrato_time": 0, "portamento_width": 0, "portamento_time": 0, "pitch_bend_min": 16, "pitch_bend_max": 16, "adsr1": 33023, "adsr2": 57315, "program": 1, "sample": 12},
+  {"tone": 5, "priority": 1, "mode": 4, "volume": 96, "pan": 64, "center": 97, "shift": 57, "key_min": 65, "key_max": 65, "vibrato_width": 0, "vibrato_time": 0, "portamento_width": 0, "portamento_time": 0, "pitch_bend_min": 16, "pitch_bend_max": 16, "adsr1": 33023, "adsr2": 57315, "program": 1, "sample": 11},
+  {"tone": 6, "priority": 1, "mode": 4, "volume": 96, "pan": 64, "center": 103, "shift": 57, "key_min": 66, "key_max": 66, "vibrato_width": 0, "vibrato_time": 0, "portamento_width": 0, "portamento_time": 0, "pitch_bend_min": 16, "pitch_bend_max": 16, "adsr1": 33023, "adsr2": 57315, "program": 1, "sample": 11}
+ ]},
+ {"index": 2, "tones": 1, "volume": 96, "priority": 255, "mode": 255, "pan": 64, "tone_table": [
+  {"tone": 0, "priority": 1, "mode": 0, "volume": 127, "pan": 64, "center": 49, "shift": 57, "key_min": 0, "key_max": 120, "vibrato_width": 0, "vibrato_time": 0, "portamento_width": 0, "portamento_time": 0, "pitch_bend_min": 16, "pitch_bend_max": 16, "adsr1": 33023, "adsr2": 57315, "program": 2, "sample": 17}
+ ]},
+ {"index": 3, "tones": 1, "volume": 127, "priority": 255, "mode": 255, "pan": 64, "tone_table": [
+  {"tone": 0, "priority": 1, "mode": 0, "volume": 127, "pan": 64, "center": 73, "shift": 57, "key_min": 0, "key_max": 120, "vibrato_width": 0, "vibrato_time": 0, "portamento_width": 0, "portamento_time": 0, "pitch_bend_min": 16, "pitch_bend_max": 16, "adsr1": 33023, "adsr2": 57316, "program": 3, "sample": 16}
+ ]},
+ {"index": 4, "tones": 1, "volume": 80, "priority": 255, "mode": 255, "pan": 64, "tone_table": [
+  {"tone": 0, "priority": 1, "mode": 0, "volume": 127, "pan": 64, "center": 95, "shift": 57, "key_min": 0, "key_max": 120, "vibrato_width": 0, "vibrato_time": 0, "portamento_width": 0, "portamento_time": 0, "pitch_bend_min": 16, "pitch_bend_max": 16, "adsr1": 33023, "adsr2": 57315, "program": 4, "sample": 21}
+ ]},
+ {"index": 5, "tones": 5, "volume": 64, "priority": 255, "mode": 255, "pan": 64, "tone_table": [
+  {"tone": 0, "priority": 1, "mode": 4, "volume": 96, "pan": 64, "center": 90, "shift": 77, "key_min": 60, "key_max": 60, "vibrato_width": 0, "vibrato_time": 0, "portamento_width": 0, "portamento_time": 0, "pitch_bend_min": 16, "pitch_bend_max": 16, "adsr1": 33023, "adsr2": 57315, "program": 5, "sample": 11},
+  {"tone": 1, "priority": 1, "mode": 4, "volume": 96, "pan": 64, "center": 96, "shift": 77, "key_min": 61, "key_max": 61, "vibrato_width": 0, "vibrato_time": 0, "portamento_width": 0, "portamento_time": 0, "pitch_bend_min": 16, "pitch_bend_max": 16, "adsr1": 33023, "adsr2": 57315, "program": 5, "sample": 11},
+  {"tone": 2, "priority": 1, "mode": 4, "volume": 96, "pan": 64, "center": 92, "shift": 77, "key_min": 62, "key_max": 62, "vibrato_width": 0, "vibrato_time": 0, "portamento_width": 0, "portamento_time": 0, "pitch_bend_min": 16, "pitch_bend_max": 16, "adsr1": 33023, "adsr2": 57315, "program": 5, "sample": 12},
+  {"tone": 3, "priority": 1, "mode": 4, "volume": 96, "pan": 64, "center": 98, "shift": 77, "key_min": 63, "key_max": 63, "vibrato_width": 0, "vibrato_time": 0, "portamento_width": 0, "portamento_time": 0, "pitch_bend_min": 16, "pitch_bend_max": 16, "adsr1": 33023, "adsr2": 57315, "program": 5, "sample": 12},
+  {"tone": 4, "priority": 1, "mode": 4, "volume": 80, "pan": 64, "center": 87, "shift": 77, "key_min": 64, "key_max": 64, "vibrato_width": 0, "vibrato_time": 0, "portamento_width": 0, "portamento_time": 0, "pitch_bend_min": 16, "pitch_bend_max": 16, "adsr1": 33023, "adsr2": 57315, "program": 5, "sample": 12}
+ ]},
+ {"index": 6, "tones": 1, "volume": 80, "priority": 255, "mode": 255, "pan": 64, "tone_table": [
+  {"tone": 0, "priority": 1, "mode": 0, "volume": 127, "pan": 64, "center": 100, "shift": 0, "key_min": 0, "key_max": 120, "vibrato_width": 0, "vibrato_time": 0, "portamento_width": 0, "portamento_time": 0, "pitch_bend_min": 16, "pitch_bend_max": 16, "adsr1": 33023, "adsr2": 57315, "program": 6, "sample": 13}
+ ]},
+ {"index": 7, "tones": 2, "volume": 112, "priority": 255, "mode": 255, "pan": 64, "tone_table": [
+  {"tone": 0, "priority": 1, "mode": 0, "volume": 127, "pan": 64, "center": 90, "shift": 57, "key_min": 60, "key_max": 60, "vibrato_width": 0, "vibrato_time": 0, "portamento_width": 0, "portamento_time": 0, "pitch_bend_min": 16, "pitch_bend_max": 16, "adsr1": 33023, "adsr2": 57315, "program": 7, "sample": 14},
+  {"tone": 1, "priority": 1, "mode": 0, "volume": 127, "pan": 64, "center": 91, "shift": 57, "key_min": 61, "key_max": 61, "vibrato_width": 0, "vibrato_time": 0, "portamento_width": 0, "portamento_time": 0, "pitch_bend_min": 16, "pitch_bend_max": 16, "adsr1": 33023, "adsr2": 57315, "program": 7, "sample": 15}
+ ]},
+ {"index": 8, "tones": 2, "volume": 48, "priority": 255, "mode": 255, "pan": 64, "tone_table": [
+  {"tone": 0, "priority": 1, "mode": 4, "volume": 127, "pan": 64, "center": 95, "shift": 57, "key_min": 0, "key_max": 120, "vibrato_width": 0, "vibrato_time": 0, "portamento_width": 0, "portamento_time": 0, "pitch_bend_min": 16, "pitch_bend_max": 16, "adsr1": 44018, "adsr2": 49635, "program": 8, "sample": 21},
+  {"tone": 1, "priority": 1, "mode": 4, "volume": 127, "pan": 64, "center": 95, "shift": 67, "key_min": 0, "key_max": 120, "vibrato_width": 0, "vibrato_time": 0, "portamento_width": 0, "portamento_time": 0, "pitch_bend_min": 16, "pitch_bend_max": 16, "adsr1": 44018, "adsr2": 49635, "program": 8, "sample": 21}
+ ]},
+ {"index": 9, "tones": 2, "volume": 32, "priority": 255, "mode": 255, "pan": 64, "tone_table": [
+  {"tone": 0, "priority": 1, "mode": 4, "volume": 127, "pan": 64, "center": 95, "shift": 77, "key_min": 0, "key_max": 120, "vibrato_width": 0, "vibrato_time": 0, "portamento_width": 0, "portamento_time": 0, "pitch_bend_min": 16, "pitch_bend_max": 16, "adsr1": 44018, "adsr2": 49635, "program": 9, "sample": 21},
+  {"tone": 1, "priority": 1, "mode": 4, "volume": 127, "pan": 64, "center": 95, "shift": 87, "key_min": 0, "key_max": 120, "vibrato_width": 0, "vibrato_time": 0, "portamento_width": 0, "portamento_time": 0, "pitch_bend_min": 16, "pitch_bend_max": 16, "adsr1": 44018, "adsr2": 49635, "program": 9, "sample": 21}
+ ]},
+ {"index": 10, "tones": 1, "volume": 48, "priority": 255, "mode": 255, "pan": 64, "tone_table": [
+  {"tone": 0, "priority": 1, "mode": 4, "volume": 127, "pan": 64, "center": 99, "shift": 57, "key_min": 0, "key_max": 120, "vibrato_width": 0, "vibrato_time": 0, "portamento_width": 0, "portamento_time": 0, "pitch_bend_min": 16, "pitch_bend_max": 16, "adsr1": 33023, "adsr2": 52515, "program": 10, "sample": 20}
+ ]},
+ {"index": 11, "tones": 1, "volume": 40, "priority": 255, "mode": 255, "pan": 64, "tone_table": [
+  {"tone": 0, "priority": 1, "mode": 4, "volume": 127, "pan": 64, "center": 99, "shift": 0, "key_min": 0, "key_max": 120, "vibrato_width": 0, "vibrato_time": 0, "portamento_width": 0, "portamento_time": 0, "pitch_bend_min": 16, "pitch_bend_max": 16, "adsr1": 33023, "adsr2": 54115, "program": 11, "sample": 22}
+ ]}
+]
+}

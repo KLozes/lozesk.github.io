@@ -1,0 +1,24 @@
+{
+ "schema": 1,
+ "file": "DATA/MSR01.PAC",
+ "normalized_bytes": 300808,
+ "normalized_sha256": "8ab0e86bf84bf771f0db6c70f3539b25de65fbfd1db9aa4f949eecb14f514091",
+ "records": [
+  {"t":"marker","category":16},
+  {"t":"leaf","lzs":true,"ref":"tim:bc0865058596cc649629bab216d00d710c4452ff0ca45505809d5f33557bf92f"},
+  {"t":"leaf","lzs":true,"ref":"tim:e6c11a8ad12af985d8c551ef6ab50a731232c2249e4eb7124336d7ca2601d7a5"},
+  {"t":"leaf","lzs":true,"ref":"tim:83f0305431ac798b1cb82448b229a4a4b829e52ee17af7b13d39ec38da2d21fb"},
+  {"t":"leaf","lzs":true,"ref":"tim:172e90d4d082b8a68cf80b633a8107dedc49e8fa65853f9bf3b88c67e50b4501"},
+  {"t":"marker","category":17},
+  {"t":"leaf","lzs":true,"ref":"bin:de787a09e9be599a0542e457210b1284da74e95c1fe22f89de08c9e2156ca63f"},
+  {"t":"leaf","lzs":true,"ref":"bin:304070b0d4298703e4c5cf6b61e142c6aeab4d41891545ab33bf650debd30454"},
+  {"t":"leaf","lzs":true,"ref":"bin:4e6b7910efdf76663f07240fc20c13f9235e9ff7aadcecfc240fd427bcf7ce9a"},
+  {"t":"marker","category":0},
+  {"t":"marker","category":32},
+  {"t":"marker","category":0},
+  {"t":"marker","category":0},
+  {"t":"marker","category":48},
+  {"t":"leaf","lzs":true,"ref":"mod:f568998249ee7bf0ffb0ff880676103c44b48b16b6b5480926381c27ff51200f"},
+  {"t":"leaf","lzs":true,"ref":"mod:a20d57a36e5ee4197371a367bf62365076ee7665813adff83d4af1f47ee901b7"}
+ ]
+}

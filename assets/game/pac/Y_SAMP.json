@@ -1,0 +1,16 @@
+{
+ "schema": 1,
+ "file": "DATA/Y_SAMP.PAC",
+ "normalized_bytes": 78936,
+ "normalized_sha256": "01f47b0011cf8d5b4e8644bd9dd3711cd9e544dfc5bf6988799b65733a69ec78",
+ "records": [
+  {"t":"archive","lzs":false,"records":[
+   {"t":"marker","category":16},
+   {"t":"leaf","lzs":true,"ref":"tim:8ae50260a690c5c7bc1732299a72662b5c60bd502328627125ce03fc7641d65a"},
+   {"t":"leaf","lzs":true,"ref":"tim:8ae50260a690c5c7bc1732299a72662b5c60bd502328627125ce03fc7641d65a"},
+   {"t":"marker","category":17},
+   {"t":"leaf","lzs":true,"ref":"tmd:ab8f4b6a3a193c98658cd7ab87d1418b0889dc451137c13858fb386f77d58d4c"},
+   {"t":"leaf","lzs":true,"ref":"tmd:ab8f4b6a3a193c98658cd7ab87d1418b0889dc451137c13858fb386f77d58d4c"}
+  ]}
+ ]
+}

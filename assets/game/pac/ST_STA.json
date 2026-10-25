@@ -1,0 +1,51 @@
+{
+ "schema": 1,
+ "file": "DATA/ST_STA.PAC",
+ "normalized_bytes": 475600,
+ "normalized_sha256": "ac20c556c2464235e3f5fc5b7555e29e0e7eba36918024921fa0a62b66536c90",
+ "records": [
+  {"t":"archive","lzs":false,"records":[
+   {"t":"marker","category":16},
+   {"t":"leaf","lzs":true,"ref":"tim:cfeffe653bb8d38102b0a35c608e44e584ef6d806109de45a1bd101a67f12906"},
+   {"t":"leaf","lzs":true,"ref":"tim:700098986569326d18cb305913229a6aea9c0da9bb63097bfd6a60b189529568"},
+   {"t":"marker","category":32},
+   {"t":"leaf","lzs":true,"ref":"bin:13df33b054d8416d945669949854b1614ff2ae9facae1cbf842861de57365438"},
+   {"t":"marker","category":48},
+   {"t":"leaf","lzs":true,"ref":"bin:94dbc141aa1ab1ccbba14339fcc3a9f380b468ea823e726c75fe43345531686d"},
+   {"t":"marker","category":129},
+   {"t":"archive","lzs":true,"records":[
+    {"t":"leaf","lzs":false,"ref":"bin:b656daccea7934cb2421c5d171d21c024383e47f88faf404cb29aa3d81cf5283"},
+    {"t":"leaf","lzs":false,"ref":"bin:73b132f35c26be7150e08537d194e5cfa3f29ab0b3aff18c3f84053677e66a30"},
+    {"t":"leaf","lzs":false,"ref":"bin:6ef49da86bc4c58eb773014b20c21c659e49f7513179c842b490e36d74c1520f"}
+   ]},
+   {"t":"marker","category":96},
+   {"t":"leaf","lzs":true,"ref":"tmd:df53cc355bacb3bdda8b9bdf49f4953efa99aeaec52601329b32a41c68999889"}
+  ]},
+  {"t":"archive","lzs":false,"records":[
+   {"t":"marker","category":16},
+   {"t":"leaf","lzs":true,"ref":"tim:952219e8c2a9165865d55218d873242b4f16fa782433663a4f36bc456b572d43"},
+   {"t":"marker","category":32},
+   {"t":"leaf","lzs":true,"ref":"bin:a012462800b5a2bcb81707dd976a99f881a38257d593ba9cd6b78dfbd820ba6a"},
+   {"t":"marker","category":48},
+   {"t":"leaf","lzs":true,"ref":"bin:94dbc141aa1ab1ccbba14339fcc3a9f380b468ea823e726c75fe43345531686d"},
+   {"t":"marker","category":128},
+   {"t":"archive","lzs":false,"records":[
+    {"t":"marker","category":0},
+    {"t":"marker","category":0},
+    {"t":"marker","category":0},
+    {"t":"leaf","lzs":true,"ref":"vab:e726b5ea87ff9aeabcddd366869167425b1b80da9820fdece3e0fde06c8764a4"},
+    {"t":"leaf","lzs":false,"ref":"vab:85606b19b2f1a87ccb6690045f8b9377d394b79e1a4880e2e763bfa5b1091a2d"},
+    {"t":"leaf","lzs":true,"ref":"bin:4b1cac909259cb229d5ad00a79112bdc6c44c4063853b08521effbac8f170874"},
+    {"t":"marker","category":0},
+    {"t":"marker","category":0},
+    {"t":"marker","category":0},
+    {"t":"marker","category":0},
+    {"t":"marker","category":0},
+    {"t":"marker","category":0},
+    {"t":"leaf","lzs":true,"ref":"vab:ce87b3a6a06f9d412a1244b44e363206ca45cf0bd432b3e4b1426a4894d98dc8"},
+    {"t":"leaf","lzs":false,"ref":"vab:e1eed60f4d3dc43050151e48d69439c96c5d196e65998a95cc0ab6b46fd24c84"},
+    {"t":"leaf","lzs":true,"ref":"bin:3c608d4decb10c27bd9db32c4fb64d7b4b7684660738950db1df2c2fb551cbc3"}
+   ]}
+  ]}
+ ]
+}

@@ -1,0 +1,16 @@
+{
+ "schema": 1,
+ "file": "DATA/SHILD.PAC",
+ "normalized_bytes": 33416,
+ "normalized_sha256": "923810caad9f7bb9975b17ffc117d7a4ca63208c8f5fd35a5a2bf3142590a990",
+ "records": [
+  {"t":"archive","lzs":false,"records":[
+   {"t":"marker","category":16},
+   {"t":"leaf","lzs":true,"ref":"tim:5ff6200d1924d94cf597acf38283d9f0756dc4a79e7926dca56a09350fb13093"},
+   {"t":"marker","category":17},
+   {"t":"leaf","lzs":true,"ref":"tmd:b78c67624f17ef043d1f47ac0695ee9d526546d941e5ea48151588e82f7d1b04"},
+   {"t":"leaf","lzs":true,"ref":"tmd:b3ea5ea38cf7fe0e7b3787ce4a94ced1d69bd4e34424c7e8c129f97e26ec72e5"},
+   {"t":"leaf","lzs":true,"ref":"tmd:fb437551bad0a9d222b6c453ba218d6ed21df1b38a66409d555d14f28395a6f7"}
+  ]}
+ ]
+}

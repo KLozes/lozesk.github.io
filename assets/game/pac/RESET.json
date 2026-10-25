@@ -1,0 +1,9 @@
+{
+ "schema": 1,
+ "file": "DATA/RESET.PAC",
+ "normalized_bytes": 37580,
+ "normalized_sha256": "ca3a6b90738c2d6ada6af4a2a0f4d2e6350d353791e1d7ba2a3fb3aa8c8c0926",
+ "records": [
+  {"t":"leaf","lzs":true,"ref":"tim:515a8ad999a78af1d55ba28cd17635d78e1ee984234fcdb9c09151061873b8a1"}
+ ]
+}

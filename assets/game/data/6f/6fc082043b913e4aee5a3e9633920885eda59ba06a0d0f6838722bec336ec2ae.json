@@ -1,0 +1,13 @@
+{
+"schema": 1, "kind": "vab-header", "header_bytes": 3104,
+"version": 7, "id": 0, "declared_size": 12384,
+"programs": 1, "tones": 1, "samples": 2,
+"volume": 127, "pan": 64, "attributes": [0, 0],
+"prefix_bytes": 0,
+"sample_bytes": [4656, 4624],
+"program_table": [
+ {"index": 0, "tones": 1, "volume": 80, "priority": 255, "mode": 255, "pan": 64, "tone_table": [
+  {"tone": 0, "priority": 1, "mode": 4, "volume": 127, "pan": 64, "center": 96, "shift": 20, "key_min": 61, "key_max": 61, "vibrato_width": 0, "vibrato_time": 0, "portamento_width": 0, "portamento_time": 0, "pitch_bend_min": 16, "pitch_bend_max": 16, "adsr1": 33023, "adsr2": 57315, "program": 0, "sample": 2}
+ ]}
+]
+}

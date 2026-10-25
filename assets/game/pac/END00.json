@@ -1,0 +1,39 @@
+{
+ "schema": 1,
+ "file": "DATA/END00.PAC",
+ "normalized_bytes": 381520,
+ "normalized_sha256": "c400a3035eb3a0fb2cfb1b25280cb3431b5c478a066e3388ef61bce753d6cd70",
+ "records": [
+  {"t":"archive","lzs":false,"records":[
+   {"t":"marker","category":16},
+   {"t":"leaf","lzs":true,"ref":"tim:cfeffe653bb8d38102b0a35c608e44e584ef6d806109de45a1bd101a67f12906"},
+   {"t":"leaf","lzs":true,"ref":"tim:700098986569326d18cb305913229a6aea9c0da9bb63097bfd6a60b189529568"},
+   {"t":"leaf","lzs":true,"ref":"tim:711e3fed28ecc5a25f9ee4ec19af92a0ad864ce6b4341abc5232334ebdb885e2"},
+   {"t":"marker","category":32},
+   {"t":"leaf","lzs":true,"ref":"bin:cbefdbfd88b69d242b99d4387e87a602a4f615a4176b939c2dd21940dd28b7be"},
+   {"t":"marker","category":48},
+   {"t":"leaf","lzs":true,"ref":"bin:7a428ce3587fbe25bb1ee6e5fd9af561a99ea4c0312b1e4b040e802c110170cc"},
+   {"t":"leaf","lzs":true,"ref":"bin:f06a050ceb1390674948d8f33e60d6baadfea5c2a2e0d913a2aeefd8c53b3728"},
+   {"t":"marker","category":64},
+   {"t":"leaf","lzs":true,"ref":"bin:a4e89115d939bab4c2f32bd7c7b4bce3374cae1549509caa5c938c8886e1f6bb"},
+   {"t":"leaf","lzs":true,"ref":"bin:a4e89115d939bab4c2f32bd7c7b4bce3374cae1549509caa5c938c8886e1f6bb"},
+   {"t":"marker","category":66},
+   {"t":"leaf","lzs":true,"ref":"tim:c1107dc197b15867c9659716a2e2c2c3ea1c542373465a278d09ff72e61a8966"},
+   {"t":"leaf","lzs":true,"ref":"tim:a05dc0b3667f646edc095bddbe09373ea94752fa4a60ec1f985eaadbaebd6cba"},
+   {"t":"marker","category":129},
+   {"t":"archive","lzs":true,"records":[
+    {"t":"leaf","lzs":false,"ref":"bin:b656daccea7934cb2421c5d171d21c024383e47f88faf404cb29aa3d81cf5283"},
+    {"t":"leaf","lzs":false,"ref":"bin:73b132f35c26be7150e08537d194e5cfa3f29ab0b3aff18c3f84053677e66a30"},
+    {"t":"leaf","lzs":false,"ref":"bin:6ef49da86bc4c58eb773014b20c21c659e49f7513179c842b490e36d74c1520f"}
+   ]},
+   {"t":"marker","category":96},
+   {"t":"leaf","lzs":true,"ref":"tmd:df53cc355bacb3bdda8b9bdf49f4953efa99aeaec52601329b32a41c68999889"}
+  ]},
+  {"t":"archive","lzs":false,"records":[
+   {"t":"marker","category":16},
+   {"t":"leaf","lzs":true,"ref":"tim:714bb7d6a0ff7d00546b9974d1d74a33eced1e9ffbf8cc938a4565d4838e448e"},
+   {"t":"leaf","lzs":true,"ref":"tim:56e5a525ffe0d9ec1764ca16bd5ed2243f88e8d112714d24d3a27ebce91af485"},
+   {"t":"leaf","lzs":true,"ref":"tim:8fdb15e2d862062108ef5d59a44cd5727ef846c6240ae83324e3dc5466319f10"}
+  ]}
+ ]
+}

@@ -1,0 +1,75 @@
+{
+ "schema": 1,
+ "file": "DATA/ST_08B.PAC",
+ "normalized_bytes": 482252,
+ "normalized_sha256": "80c3f069b93c180a3e64566435330641085bd58a8529e16a224dabcc5121a7cd",
+ "records": [
+  {"t":"marker","category":16},
+  {"t":"archive","lzs":false,"records":[
+   {"t":"marker","category":19},
+   {"t":"leaf","lzs":true,"ref":"bin:3cb9ec76cc861c5ce5be60395e28128b18d12d839ff97fd66b9034b50972835c"},
+   {"t":"marker","category":20},
+   {"t":"leaf","lzs":true,"ref":"bin:78b2fb1cfe1b0a9d8d13bfe858fd6152d968d7eb778d18df26dde1fae9ce397e"},
+   {"t":"marker","category":21},
+   {"t":"archive","lzs":false,"records":[
+    {"t":"marker","category":16},
+    {"t":"leaf","lzs":true,"ref":"tim:5ff6200d1924d94cf597acf38283d9f0756dc4a79e7926dca56a09350fb13093"},
+    {"t":"marker","category":17},
+    {"t":"leaf","lzs":true,"ref":"tmd:b78c67624f17ef043d1f47ac0695ee9d526546d941e5ea48151588e82f7d1b04"},
+    {"t":"leaf","lzs":true,"ref":"tmd:b3ea5ea38cf7fe0e7b3787ce4a94ced1d69bd4e34424c7e8c129f97e26ec72e5"},
+    {"t":"leaf","lzs":true,"ref":"tmd:fb437551bad0a9d222b6c453ba218d6ed21df1b38a66409d555d14f28395a6f7"}
+   ]},
+   {"t":"marker","category":48},
+   {"t":"leaf","lzs":true,"ref":"bin:920ccda8e81868b06b579e383a8bdd9b6614d7a0852e8745c6ec2330082087ac"}
+  ]},
+  {"t":"marker","category":32},
+  {"t":"archive","lzs":false,"records":[
+   {"t":"marker","category":81},
+   {"t":"leaf","lzs":true,"ref":"tim:cfeffe653bb8d38102b0a35c608e44e584ef6d806109de45a1bd101a67f12906"},
+   {"t":"marker","category":82},
+   {"t":"leaf","lzs":true,"ref":"tim:2e9766c0341c4ce118405c14f5655149daf4024a80653997d72dc03cfb2a8266"},
+   {"t":"marker","category":84},
+   {"t":"leaf","lzs":true,"ref":"tim:a378b1729a3b818567c92d2591891738f2ac1716335fc17ff73f2116a737c643"},
+   {"t":"marker","category":48},
+   {"t":"leaf","lzs":true,"ref":"bin:94dbc141aa1ab1ccbba14339fcc3a9f380b468ea823e726c75fe43345531686d"},
+   {"t":"leaf","lzs":true,"ref":"bin:7a428ce3587fbe25bb1ee6e5fd9af561a99ea4c0312b1e4b040e802c110170cc"},
+   {"t":"leaf","lzs":true,"ref":"bin:bef5483d07edcc41d6d26cef1ba84304f558798fa52ae46593e0a04b0547c822"},
+   {"t":"leaf","lzs":true,"ref":"bin:8c23f1cf37d6b0f139e8bc50dd69a7805439fd09b2977b63a7b8a3e37cbd9c9b"},
+   {"t":"marker","category":49},
+   {"t":"leaf","lzs":true,"ref":"bin:6afb38cd041659cac9ea089b5c30a0bbb15885c874badd5add05027116938882"},
+   {"t":"marker","category":64},
+   {"t":"leaf","lzs":true,"ref":"bin:81074b0e490cc1c4ed80adce9239c4348e541bdc1c61b3714bb3cf272300d5c3"},
+   {"t":"leaf","lzs":true,"ref":"bin:81074b0e490cc1c4ed80adce9239c4348e541bdc1c61b3714bb3cf272300d5c3"},
+   {"t":"marker","category":66},
+   {"t":"leaf","lzs":true,"ref":"tim:c1107dc197b15867c9659716a2e2c2c3ea1c542373465a278d09ff72e61a8966"},
+   {"t":"leaf","lzs":true,"ref":"tim:a05dc0b3667f646edc095bddbe09373ea94752fa4a60ec1f985eaadbaebd6cba"},
+   {"t":"marker","category":129},
+   {"t":"archive","lzs":true,"records":[
+    {"t":"leaf","lzs":false,"ref":"bin:b656daccea7934cb2421c5d171d21c024383e47f88faf404cb29aa3d81cf5283"},
+    {"t":"leaf","lzs":false,"ref":"bin:73b132f35c26be7150e08537d194e5cfa3f29ab0b3aff18c3f84053677e66a30"},
+    {"t":"leaf","lzs":false,"ref":"bin:6ef49da86bc4c58eb773014b20c21c659e49f7513179c842b490e36d74c1520f"}
+   ]}
+  ]},
+  {"t":"marker","category":48},
+  {"t":"archive","lzs":false,"records":[
+   {"t":"marker","category":32},
+   {"t":"leaf","lzs":true,"ref":"tim:c071c73036e99a1b32f8f8ca797daa009854b068f8e65b4fd69ab77c57f7a0e8"},
+   {"t":"leaf","lzs":true,"ref":"tim:63a575f9712eb753da8f4aec4e1504c6fa939013965335cde05f583f6d824f88"},
+   {"t":"leaf","lzs":true,"ref":"tim:e07f7c90d90ffc6c02fb2ac32ab3efa8b21d441983e2880ecf8e5fac00ff25b4"},
+   {"t":"leaf","lzs":true,"ref":"tim:e8b04b6af7e4c989ac0e32f99a2d083e9b8e69e7736da763753f9793222f234f"},
+   {"t":"marker","category":33},
+   {"t":"leaf","lzs":true,"ref":"tmd:57ab60dd45ab38f1202e34f74d54b34e777aa5af87fd35d5872bc267a0009a21"},
+   {"t":"leaf","lzs":true,"ref":"tmd:80f370ad43b900bae8372940a9558b19c7a6a5393f5c296b34cad67aede85381"},
+   {"t":"leaf","lzs":true,"ref":"tmd:9bccadb284e19ecaf014e9009dcebd4fbbed1f010fe9f4a48289bcb3b1c3654f"},
+   {"t":"leaf","lzs":true,"ref":"tmd:d803e70e20c398d56c224cf23337466556c8b77d3212ab438eb4482a5b28eba1"},
+   {"t":"leaf","lzs":true,"ref":"tmd:ea6ef411836b1876c41174dd90db4fd13b2723f33f6ed6ba505b67d6d07a8974"},
+   {"t":"leaf","lzs":true,"ref":"tmd:7d2e28ff2562325c1b3050ace3160543d3f35465b071715dc37ebfc8d3d7c1bf"},
+   {"t":"leaf","lzs":true,"ref":"tmd:255538daea4ce24154279affa506f45624844d9c3b545c3ced064b840c4b8f19"},
+   {"t":"leaf","lzs":true,"ref":"tmd:dd45fbf0d12e95ae0ecc2239c08b9283c938196da24b014bfe23cbd2716cbcfc"},
+   {"t":"leaf","lzs":true,"ref":"tmd:0c2d080d1295a528250c7fee32b6d95bd352f346cc64fb5ebea57e3e51364589"},
+   {"t":"leaf","lzs":true,"ref":"tmd:743c92d2c8b60aa098d5e0d2c1d762eda18c654ef5fa28a3b720b696cb0ec535"},
+   {"t":"marker","category":34},
+   {"t":"leaf","lzs":true,"ref":"bin:3a2bc04724a9c13afccdaa417911fddea01bd11485879bd0450bc046793a5b15"}
+  ]}
+ ]
+}

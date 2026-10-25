@@ -1,0 +1,575 @@
+{
+	"schema":	1,
+	"scheme":	"tables-1",
+	"source":	{
+		"file":	"SLUS_014.18",
+		"bytes":	618496,
+		"sha256":	"1b381a31e5e9f2987da4cdb3510490019d2b821298bc9272f67e816d61c06131"
+	},
+	"total_bytes":	14734,
+	"concatenated_sha256":	"08f7458fccda3937c1c92b7a6e8c6e2015f0b16a6abbdbbebd3fa2b6846aba4f",
+	"tables":	[{
+			"name":	"exe_header_fields",
+			"file":	"tables/exe_header_fields.bin",
+			"bytes":	32,
+			"sha256":	"23f99e1cd334ca3deff36e9758918849fbd697de3c1a22d2889a5e93bd1882c0",
+			"layout":	{
+				"element":	"record",
+				"element_bytes":	32,
+				"elements":	1,
+				"trailer_bytes":	0
+			},
+			"origin":	{
+				"address":	null,
+				"address_end":	null,
+				"file_offset":	0,
+				"kind":	"fixed"
+			},
+			"consumer":	"the identity of the tables: the store checks the PS-X EXE magic, the load address (+0x18) and the payload size (+0x1c); no game code reads it",
+			"note":	"magic \"PS-X EXE\" (8 bytes), 8 zero bytes, initial pc, initial gp, load address, payload size (u32 each)"
+		}, {
+			"name":	"module_load_bases",
+			"file":	"tables/module_load_bases.bin",
+			"bytes":	8,
+			"sha256":	"76b654515daa9fe3209237ce5a9cd4d507aecc802cab682e21da3873f26bb7b0",
+			"layout":	{
+				"element":	"u32",
+				"element_bytes":	4,
+				"elements":	2,
+				"trailer_bytes":	0
+			},
+			"origin":	{
+				"address":	"0x80010004",
+				"address_end":	"0x8001000c",
+				"file_offset":	2052,
+				"kind":	"fixed"
+			},
+			"consumer":	"gba2_fighter_code_binding: load address of the module of player slot 0 and 1"
+		}, {
+			"name":	"save_title",
+			"file":	"tables/save_title.bin",
+			"bytes":	48,
+			"sha256":	"4c16f962b30b507dec11ae31781cfdc25d32e7728825b26e6989a1f3a7f14e5a",
+			"layout":	{
+				"element":	"u8",
+				"element_bytes":	1,
+				"elements":	48,
+				"trailer_bytes":	0
+			},
+			"origin":	{
+				"address":	"0x800105ec",
+				"address_end":	"0x8001061c",
+				"file_offset":	3564,
+				"kind":	"fixed"
+			},
+			"consumer":	"gba2_system_save_create: NUL-terminated memory card title"
+		}, {
+			"name":	"save_identifier",
+			"file":	"tables/save_identifier.bin",
+			"bytes":	30,
+			"sha256":	"b3535095d2ab56422a85e3e71b571fcee424583c6e7a3311b592e316cb7cf245",
+			"layout":	{
+				"element":	"u8",
+				"element_bytes":	1,
+				"elements":	30,
+				"trailer_bytes":	0
+			},
+			"origin":	{
+				"address":	"0x8001061c",
+				"address_end":	"0x8001063a",
+				"file_offset":	3612,
+				"kind":	"fixed"
+			},
+			"consumer":	"gba2_system_save_create and gba2_system_save_decode: the 30-byte save identifier"
+		}, {
+			"name":	"clear_rewards",
+			"file":	"tables/clear_rewards.bin",
+			"bytes":	64,
+			"sha256":	"a65b9d698dc8eb11347122e8dff017a35c81b1f4e43f9059e318fee647d910c4",
+			"layout":	{
+				"element":	"record",
+				"element_bytes":	8,
+				"elements":	8,
+				"trailer_bytes":	0
+			},
+			"origin":	{
+				"address":	"0x80010718",
+				"address_end":	"0x80010758",
+				"file_offset":	3864,
+				"kind":	"fixed"
+			},
+			"consumer":	"gba2_options_derive_unlocks: 8 clears x 4 u16 fighter ids, a row ends at 0xff",
+			"note":	"4 u16 fighter ids; 0xff ends the row"
+		}, {
+			"name":	"save_header_icon",
+			"file":	"tables/save_header_icon.bin",
+			"bytes":	512,
+			"sha256":	"bd318a72998b327b45a7a38ed24c545664cb91be21cc848ad16601306920fb14",
+			"layout":	{
+				"element":	"u8",
+				"element_bytes":	1,
+				"elements":	512,
+				"trailer_bytes":	0
+			},
+			"origin":	{
+				"address":	"0x80098844",
+				"address_end":	"0x80098a44",
+				"file_offset":	561220,
+				"kind":	"fixed"
+			},
+			"consumer":	"gba2_system_save_create: the 512-byte memory card file header (icon)"
+		}, {
+			"name":	"pad_choice_table",
+			"file":	"tables/pad_choice_table.bin",
+			"bytes":	20,
+			"sha256":	"ce1ff05afc06ec79f6c6ca34064df69890b67dcf50c1ee5079b3b93f057fb71b",
+			"layout":	{
+				"element":	"u16",
+				"element_bytes":	2,
+				"elements":	10,
+				"trailer_bytes":	0
+			},
+			"origin":	{
+				"address":	"0x80098a94",
+				"address_end":	"0x80098aa8",
+				"file_offset":	561812,
+				"kind":	"fixed"
+			},
+			"consumer":	"options menu pad_choice and pad_mask: 10 u16 pad masks"
+		}, {
+			"name":	"option_record_defaults",
+			"file":	"tables/option_record_defaults.bin",
+			"bytes":	48,
+			"sha256":	"36fe738c5055c32df6493364c853fbca1d366aa40f27335356ee55a1c664cbf6",
+			"layout":	{
+				"element":	"u16",
+				"element_bytes":	2,
+				"elements":	24,
+				"trailer_bytes":	0
+			},
+			"origin":	{
+				"address":	"0x80098aa8",
+				"address_end":	"0x80098ad8",
+				"file_offset":	561832,
+				"kind":	"fixed"
+			},
+			"consumer":	"gba2_options_default: 24 u16 default records"
+		}, {
+			"name":	"attract_pairs",
+			"file":	"tables/attract_pairs.bin",
+			"bytes":	32,
+			"sha256":	"12de0620d02aacf7c020b618c248e5efb34bf7a4ee6c1505cfa1e21973dccd14",
+			"layout":	{
+				"element":	"record",
+				"element_bytes":	4,
+				"elements":	8,
+				"trailer_bytes":	0
+			},
+			"origin":	{
+				"address":	"0x80098ad8",
+				"address_end":	"0x80098af8",
+				"file_offset":	561880,
+				"kind":	"fixed"
+			},
+			"consumer":	"gba2_frontend_attract_prepare: 8 pairs of u16 fighter ids, index (raw_06 & 14) * 2",
+			"note":	"2 u16 fighter ids: own, other"
+		}, {
+			"name":	"story_courses",
+			"file":	"tables/story_courses.bin",
+			"bytes":	544,
+			"sha256":	"63554d040d231bf2db1771a76c28dcfff39eecb816839767f7fdf89051dac450",
+			"layout":	{
+				"element":	"record",
+				"element_bytes":	68,
+				"elements":	8,
+				"trailer_bytes":	0
+			},
+			"origin":	{
+				"address":	"0x80098af8",
+				"address_end":	"0x80098d18",
+				"file_offset":	561912,
+				"kind":	"fixed"
+			},
+			"consumer":	"gba2_frontend_course_prepare, story mode: 8 courses x 68 bytes",
+			"note":	"2 u16 own fighter ids, 8 rounds of 8 bytes"
+		}, {
+			"name":	"stage_flags",
+			"file":	"tables/stage_flags.bin",
+			"bytes":	32,
+			"sha256":	"d93a57b07be0484896baea2d78b5dfac90bbdfedf76dff2180dcb664c27aa372",
+			"layout":	{
+				"element":	"u16",
+				"element_bytes":	2,
+				"elements":	16,
+				"trailer_bytes":	0
+			},
+			"origin":	{
+				"address":	"0x80098d18",
+				"address_end":	"0x80098d38",
+				"file_offset":	562456,
+				"kind":	"fixed"
+			},
+			"consumer":	"gba2_frontend_course_prepare, story mode: 16 u16 stage flags"
+		}, {
+			"name":	"opponent_stages",
+			"file":	"tables/opponent_stages.bin",
+			"bytes":	68,
+			"sha256":	"f6bf7d2eaa9fa18b70947d2cf21d7987005517f3f25f12edb02d34fd6e64561c",
+			"layout":	{
+				"element":	"u16",
+				"element_bytes":	2,
+				"elements":	34,
+				"trailer_bytes":	0
+			},
+			"origin":	{
+				"address":	"0x80098d38",
+				"address_end":	"0x80098d7c",
+				"file_offset":	562488,
+				"kind":	"fixed"
+			},
+			"consumer":	"gba2_frontend_course_prepare and gba2_frontend_attract_prepare: u16 stage per opponent fighter id (34)"
+		}, {
+			"name":	"classifications",
+			"file":	"tables/classifications.bin",
+			"bytes":	70,
+			"sha256":	"89827307f1513c143163ad5c38fb7a2401b2f0119cb280d9956f1846a5dc5bd6",
+			"layout":	{
+				"element":	"u16",
+				"element_bytes":	2,
+				"elements":	35,
+				"trailer_bytes":	0
+			},
+			"origin":	{
+				"address":	"0x80098d88",
+				"address_end":	"0x80098dce",
+				"file_offset":	562568,
+				"kind":	"fixed"
+			},
+			"consumer":	"frontend catalog: per fighter classification, read by ui_model.c and course_candidates"
+		}, {
+			"name":	"course_fighter_flags",
+			"file":	"tables/course_fighter_flags.bin",
+			"bytes":	70,
+			"sha256":	"38433e51fda5675bf074042c8d935ee9fe4db8748b5ee7d9c0ca2e5f8073a3c5",
+			"layout":	{
+				"element":	"u8",
+				"element_bytes":	1,
+				"elements":	70,
+				"trailer_bytes":	0
+			},
+			"origin":	{
+				"address":	"0x80098dd8",
+				"address_end":	"0x80098e1e",
+				"file_offset":	562648,
+				"kind":	"fixed"
+			},
+			"consumer":	"course_candidates (src/sim/frontend.c): flag byte per fighter id"
+		}, {
+			"name":	"file_table",
+			"file":	"tables/file_table.bin",
+			"bytes":	5678,
+			"sha256":	"94fd5800ac8234a61a499ebfd48c6533ff585baf829cf1d66e44c61733ea3841",
+			"layout":	{
+				"element":	"record",
+				"element_bytes":	44,
+				"elements":	129,
+				"trailer_bytes":	2
+			},
+			"origin":	{
+				"address":	"0x80098f10",
+				"address_end":	"0x8009a53e",
+				"file_offset":	562960,
+				"kind":	"data-dependent"
+			},
+			"consumer":	"gba2_file_table_open, _get and _find: 129 records x 44 bytes, then the 0xffff sentinel; the movie player reads it too",
+			"note":	"u16 id, u16 reserved, u32 sector cache, u32 size cache, char name[32]; the 2-byte trailer is the 0xffff sentinel"
+		}, {
+			"name":	"actuator_patterns",
+			"file":	"tables/actuator_patterns.bin",
+			"bytes":	36,
+			"sha256":	"5137b4bc0c04012fa37bee686d020c4bf2f2a3c7cff47b5c8615894f2cdfecd7",
+			"layout":	{
+				"element":	"u8",
+				"element_bytes":	1,
+				"elements":	36,
+				"trailer_bytes":	0
+			},
+			"origin":	{
+				"address":	"0x8009a570",
+				"address_end":	"0x8009a594",
+				"file_offset":	568688,
+				"kind":	"data-dependent"
+			},
+			"consumer":	"gba2_actuators_request and _tick: (time, value) byte pairs of the five rumble patterns, each ended by a pair whose time is 0; the targets of actuator_pointers"
+		}, {
+			"name":	"actuator_pointers",
+			"file":	"tables/actuator_pointers.bin",
+			"bytes":	20,
+			"sha256":	"d96e94f10d907b3eecded98e39f528ad104cd84eb113417227a3ee74dff9588d",
+			"layout":	{
+				"element":	"u32",
+				"element_bytes":	4,
+				"elements":	5,
+				"trailer_bytes":	0
+			},
+			"origin":	{
+				"address":	"0x8009a594",
+				"address_end":	"0x8009a5a8",
+				"file_offset":	568724,
+				"kind":	"fixed"
+			},
+			"consumer":	"gba2_actuators_open and gba2_actuators_request: five u32 rumble pattern pointers (original addresses inside actuator_patterns)"
+		}, {
+			"name":	"cue_lists",
+			"file":	"tables/cue_lists.bin",
+			"bytes":	242,
+			"sha256":	"321d805b280c93b990aa5a8dd2b3af0346c34dff0a30b79523a1de7aaa1c81ae",
+			"layout":	{
+				"element":	"u16",
+				"element_bytes":	2,
+				"elements":	121,
+				"trailer_bytes":	0
+			},
+			"origin":	{
+				"address":	"0x8009a9c8",
+				"address_end":	"0x8009aaba",
+				"file_offset":	569800,
+				"kind":	"data-dependent"
+			},
+			"consumer":	"options menu cue_list: u16 sound test cue lists, each ended by 0, with up to 3 bytes of padding between lists; the targets of cue_list_pointers"
+		}, {
+			"name":	"cue_list_pointers",
+			"file":	"tables/cue_list_pointers.bin",
+			"bytes":	76,
+			"sha256":	"4ee11e279848c320b02eafda5f92e600a95682073d7152fb31cb841cb71da787",
+			"layout":	{
+				"element":	"u32",
+				"element_bytes":	4,
+				"elements":	19,
+				"trailer_bytes":	0
+			},
+			"origin":	{
+				"address":	"0x8009aabc",
+				"address_end":	"0x8009ab08",
+				"file_offset":	570044,
+				"kind":	"fixed"
+			},
+			"consumer":	"options menu cue_list: nineteen u32 pointers (original addresses inside cue_lists)"
+		}, {
+			"name":	"options_menu_templates",
+			"file":	"tables/options_menu_templates.bin",
+			"bytes":	656,
+			"sha256":	"d7f0780d272df8e5e0239cae5020f8d0977ee02fa0576a39eebb27e9755bc062",
+			"layout":	{
+				"element":	"record",
+				"element_bytes":	82,
+				"elements":	8,
+				"trailer_bytes":	0
+			},
+			"origin":	{
+				"address":	"0x8009ab40",
+				"address_end":	"0x8009add0",
+				"file_offset":	570176,
+				"kind":	"fixed"
+			},
+			"consumer":	"gba2_options_menu_open: 8 list templates x 82 bytes",
+			"note":	"41 s16 per list template"
+		}, {
+			"name":	"story_fighters",
+			"file":	"tables/story_fighters.bin",
+			"bytes":	18,
+			"sha256":	"142838b4a3ca489b88be756b0dc4ceb2985a64e211c0350eb2d3958e27439eb5",
+			"layout":	{
+				"element":	"u16",
+				"element_bytes":	2,
+				"elements":	9,
+				"trailer_bytes":	0
+			},
+			"origin":	{
+				"address":	"0x8009adf4",
+				"address_end":	"0x8009ae06",
+				"file_offset":	570868,
+				"kind":	"fixed"
+			},
+			"consumer":	"frontend catalog: 9 u16 story fighter ids"
+		}, {
+			"name":	"roster",
+			"file":	"tables/roster.bin",
+			"bytes":	60,
+			"sha256":	"245acebb9d2deb9d7871a4865f99ccd53733d8bc405c6150f2840aad6fdc74ae",
+			"layout":	{
+				"element":	"u16",
+				"element_bytes":	2,
+				"elements":	30,
+				"trailer_bytes":	0
+			},
+			"origin":	{
+				"address":	"0x8009ae08",
+				"address_end":	"0x8009ae44",
+				"file_offset":	570888,
+				"kind":	"fixed"
+			},
+			"consumer":	"frontend catalog and gba2_options_unlock_all_characters: 30 u16 fighter ids of the selection grid"
+		}, {
+			"name":	"beam_descriptor_rows",
+			"file":	"tables/beam_descriptor_rows.bin",
+			"bytes":	1536,
+			"sha256":	"64f1651e31bf0bec4a5b47da34db8e0949237341b262662b81c9fb4f8e36134a",
+			"layout":	{
+				"element":	"record",
+				"element_bytes":	16,
+				"elements":	96,
+				"trailer_bytes":	0
+			},
+			"origin":	{
+				"address":	"0x8009b040",
+				"address_end":	"0x8009b640",
+				"file_offset":	571456,
+				"kind":	"fixed"
+			},
+			"consumer":	"object type 0x0f beam strip geometry (original 49330, the only reader), gba2_fighter_objects_open: 96 rows x 16 bytes indexed without a bound by register 0 + draw buffer parity (largest authored index 69); the next table starts right after",
+			"note":	"8 u16: depth add, tpage, CLUT, u, v, width, length, 0"
+		}, {
+			"name":	"callback_table",
+			"file":	"tables/callback_table.bin",
+			"bytes":	272,
+			"sha256":	"4c8ac9daea0fb4c0e8935b324975ad5200f828c33c1e9575c84b5eee635d91d7",
+			"layout":	{
+				"element":	"record",
+				"element_bytes":	8,
+				"elements":	34,
+				"trailer_bytes":	0
+			},
+			"origin":	{
+				"address":	"0x8009b7f0",
+				"address_end":	"0x8009b900",
+				"file_offset":	573424,
+				"kind":	"fixed"
+			},
+			"consumer":	"gba2_fighter_code_binding: u32 callback address per bank and player slot (34 x 8)",
+			"note":	"u32 callback address of player slot 0 and of slot 1"
+		}, {
+			"name":	"fighter_view_position",
+			"file":	"tables/fighter_view_position.bin",
+			"bytes":	22,
+			"sha256":	"9838a2747cd259a8e98c1651f35285647e67837fb02d0b83f9dd3f1811664b43",
+			"layout":	{
+				"element":	"u16",
+				"element_bytes":	2,
+				"elements":	11,
+				"trailer_bytes":	0
+			},
+			"origin":	{
+				"address":	"0x8009b970",
+				"address_end":	"0x8009b986",
+				"file_offset":	573808,
+				"kind":	"fixed"
+			},
+			"consumer":	"gba2_fighter_view_position: the hit shake offsets"
+		}, {
+			"name":	"small_effect_colors",
+			"file":	"tables/small_effect_colors.bin",
+			"bytes":	152,
+			"sha256":	"30aea89cb6e67b517c04f0bbe3f414a9d1f3ac02394a00ad0f2d59dbc2ffba94",
+			"layout":	{
+				"element":	"u8",
+				"element_bytes":	1,
+				"elements":	152,
+				"trailer_bytes":	0
+			},
+			"origin":	{
+				"address":	"0x8009c7c0",
+				"address_end":	"0x8009c858",
+				"file_offset":	577472,
+				"kind":	"fixed"
+			},
+			"consumer":	"small effects: environment.colors"
+		}, {
+			"name":	"trig_quarter",
+			"file":	"tables/trig_quarter.bin",
+			"bytes":	2050,
+			"sha256":	"bab3b71ba7f79dfb2b5cebb71f8382a79606a958d72031bc11b88066c36033bd",
+			"layout":	{
+				"element":	"u16",
+				"element_bytes":	2,
+				"elements":	1025,
+				"trailer_bytes":	0
+			},
+			"origin":	{
+				"address":	"0x8009e92c",
+				"address_end":	"0x8009f12e",
+				"file_offset":	586028,
+				"kind":	"fixed"
+			},
+			"consumer":	"gba2_fixed_trig_open: quarter sine table"
+		}, {
+			"name":	"atan_table",
+			"file":	"tables/atan_table.bin",
+			"bytes":	2050,
+			"sha256":	"b95a5540f30e1f0f40975157595d078bb07d3242d2c856a1c679e533e2f26233",
+			"layout":	{
+				"element":	"u16",
+				"element_bytes":	2,
+				"elements":	1025,
+				"trailer_bytes":	0
+			},
+			"origin":	{
+				"address":	"0x800a32cc",
+				"address_end":	"0x800a3ace",
+				"file_offset":	604876,
+				"kind":	"fixed"
+			},
+			"consumer":	"gba2_original_atan2: world.atan_table"
+		}, {
+			"name":	"audio_pitch_tables",
+			"file":	"tables/audio_pitch_tables.bin",
+			"bytes":	280,
+			"sha256":	"f240138ba86bb8f9d8ab0844ff6be79550f44f7a35cd032e21f20032baa201c8",
+			"layout":	{
+				"element":	"u16",
+				"element_bytes":	2,
+				"elements":	140,
+				"trailer_bytes":	0
+			},
+			"origin":	{
+				"address":	"0x800a50ec",
+				"address_end":	"0x800a5204",
+				"file_offset":	612588,
+				"kind":	"fixed"
+			},
+			"consumer":	"gba2_audio_mixer: pitch tables (12 + 128 u16)"
+		}, {
+			"name":	"frame_colors",
+			"file":	"tables/frame_colors.bin",
+			"bytes":	8,
+			"sha256":	"c763351e354ce699fcba1a6517e1e89c33c38ee75473b78c9589ee4662bbb918",
+			"layout":	{
+				"element":	"u16",
+				"element_bytes":	2,
+				"elements":	4,
+				"trailer_bytes":	0
+			},
+			"origin":	{
+				"address":	"0x800a5fec",
+				"address_end":	"0x800a5ff4",
+				"file_offset":	616428,
+				"kind":	"fixed"
+			},
+			"consumer":	"frontend_view: 4 u16 selection frame colors"
+		}],
+	"not_shipped":	[{
+			"name":	"movie_quant_commands",
+			"address":	"0x8009cc4c",
+			"address_end":	"0x8009cd54",
+			"file_offset":	578636,
+			"bytes":	264,
+			"why":	"disc backend only, gba2_movie_tables_open: MDEC command, quantizer and scale tables (the package plays WebM)"
+		}, {
+			"name":	"movie_vlc_stream",
+			"address":	"0x8009cdcc",
+			"address_end":	"0x8009dbd9",
+			"file_offset":	579020,
+			"bytes":	3597,
+			"why":	"disc backend only, gba2_movie_tables_open: the packed VLC table stream that expands to 0x11000 bytes (the package plays WebM)"
+		}]
+}

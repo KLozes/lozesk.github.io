@@ -1,0 +1,24 @@
+{
+"schema": 1, "kind": "vab-header", "header_bytes": 3616,
+"version": 7, "id": 0, "declared_size": 30864,
+"programs": 2, "tones": 10, "samples": 10,
+"volume": 127, "pan": 64, "attributes": [0, 0],
+"prefix_bytes": 0,
+"sample_bytes": [4144, 2256, 1504, 2336, 2208, 3632, 2000, 1888, 3424, 3856],
+"program_table": [
+ {"index": 0, "tones": 4, "volume": 64, "priority": 255, "mode": 255, "pan": 64, "tone_table": [
+  {"tone": 0, "priority": 1, "mode": 4, "volume": 112, "pan": 64, "center": 85, "shift": 0, "key_min": 61, "key_max": 61, "vibrato_width": 0, "vibrato_time": 0, "portamento_width": 0, "portamento_time": 0, "pitch_bend_min": 16, "pitch_bend_max": 16, "adsr1": 33018, "adsr2": 52323, "program": 0, "sample": 1},
+  {"tone": 1, "priority": 1, "mode": 4, "volume": 112, "pan": 64, "center": 89, "shift": 0, "key_min": 65, "key_max": 65, "vibrato_width": 0, "vibrato_time": 0, "portamento_width": 0, "portamento_time": 0, "pitch_bend_min": 16, "pitch_bend_max": 16, "adsr1": 33020, "adsr2": 52323, "program": 0, "sample": 2},
+  {"tone": 2, "priority": 1, "mode": 4, "volume": 127, "pan": 64, "center": 90, "shift": 0, "key_min": 66, "key_max": 66, "vibrato_width": 0, "vibrato_time": 0, "portamento_width": 0, "portamento_time": 0, "pitch_bend_min": 16, "pitch_bend_max": 16, "adsr1": 33023, "adsr2": 57315, "program": 0, "sample": 3},
+  {"tone": 3, "priority": 1, "mode": 4, "volume": 96, "pan": 64, "center": 91, "shift": 0, "key_min": 67, "key_max": 67, "vibrato_width": 0, "vibrato_time": 0, "portamento_width": 0, "portamento_time": 0, "pitch_bend_min": 16, "pitch_bend_max": 16, "adsr1": 33023, "adsr2": 57315, "program": 0, "sample": 4}
+ ]},
+ {"index": 1, "tones": 6, "volume": 127, "priority": 255, "mode": 255, "pan": 64, "tone_table": [
+  {"tone": 0, "priority": 1, "mode": 0, "volume": 127, "pan": 64, "center": 96, "shift": 20, "key_min": 60, "key_max": 60, "vibrato_width": 0, "vibrato_time": 0, "portamento_width": 0, "portamento_time": 0, "pitch_bend_min": 16, "pitch_bend_max": 16, "adsr1": 33023, "adsr2": 57315, "program": 1, "sample": 5},
+  {"tone": 1, "priority": 1, "mode": 0, "volume": 127, "pan": 64, "center": 101, "shift": 20, "key_min": 65, "key_max": 65, "vibrato_width": 0, "vibrato_time": 0, "portamento_width": 0, "portamento_time": 0, "pitch_bend_min": 16, "pitch_bend_max": 16, "adsr1": 33023, "adsr2": 57315, "program": 1, "sample": 6},
+  {"tone": 2, "priority": 1, "mode": 0, "volume": 112, "pan": 64, "center": 99, "shift": 20, "key_min": 63, "key_max": 63, "vibrato_width": 0, "vibrato_time": 0, "portamento_width": 0, "portamento_time": 0, "pitch_bend_min": 16, "pitch_bend_max": 16, "adsr1": 33023, "adsr2": 57315, "program": 1, "sample": 7},
+  {"tone": 3, "priority": 1, "mode": 0, "volume": 127, "pan": 64, "center": 100, "shift": 20, "key_min": 64, "key_max": 64, "vibrato_width": 0, "vibrato_time": 0, "portamento_width": 0, "portamento_time": 0, "pitch_bend_min": 16, "pitch_bend_max": 16, "adsr1": 33023, "adsr2": 57315, "program": 1, "sample": 8},
+  {"tone": 4, "priority": 1, "mode": 0, "volume": 127, "pan": 64, "center": 105, "shift": 20, "key_min": 69, "key_max": 69, "vibrato_width": 0, "vibrato_time": 0, "portamento_width": 0, "portamento_time": 0, "pitch_bend_min": 16, "pitch_bend_max": 16, "adsr1": 33023, "adsr2": 57315, "program": 1, "sample": 9},
+  {"tone": 5, "priority": 1, "mode": 0, "volume": 127, "pan": 64, "center": 102, "shift": 20, "key_min": 66, "key_max": 66, "vibrato_width": 0, "vibrato_time": 0, "portamento_width": 0, "portamento_time": 0, "pitch_bend_min": 16, "pitch_bend_max": 16, "adsr1": 33023, "adsr2": 57315, "program": 1, "sample": 10}
+ ]}
+]
+}

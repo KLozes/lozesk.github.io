@@ -1,0 +1,10 @@
+{
+ "schema": 1,
+ "file": "DATA/YTEST.PAC",
+ "normalized_bytes": 77504,
+ "normalized_sha256": "792b1afe5eb175d392ffecb8ba88873d2f4205a2e3ff18943360c46aa51f9d27",
+ "records": [
+  {"t":"leaf","lzs":true,"ref":"tim:8ae50260a690c5c7bc1732299a72662b5c60bd502328627125ce03fc7641d65a"},
+  {"t":"leaf","lzs":true,"ref":"tim:8ae50260a690c5c7bc1732299a72662b5c60bd502328627125ce03fc7641d65a"}
+ ]
+}

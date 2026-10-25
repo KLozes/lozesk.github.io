@@ -1,0 +1,60 @@
+{
+ "schema": 1,
+ "file": "DATA/START.PAC",
+ "normalized_bytes": 239080,
+ "normalized_sha256": "362ee2a0c29f2cfd7b645efc6c731e759f1a759a1d35922a6c1e2d4020dd671e",
+ "records": [
+  {"t":"marker","category":0},
+  {"t":"marker","category":0},
+  {"t":"marker","category":0},
+  {"t":"marker","category":0},
+  {"t":"archive","lzs":false,"records":[
+   {"t":"marker","category":16},
+   {"t":"leaf","lzs":true,"ref":"tim:7b4f85ebddcb792700c445244ea2a75f650bba39aa5826fe6bd460a9d2bd35f1"},
+   {"t":"leaf","lzs":true,"ref":"tim:efa81cf6b02749fe6dd7d1cfceaa6ac2da9e1bb9aed7f565a3cf405b513d1705"},
+   {"t":"leaf","lzs":true,"ref":"tim:9dc0d39224df7050e68f4d13748bd4aec92318e84482ebabc13e49cb5d9d2c9c"},
+   {"t":"leaf","lzs":true,"ref":"tim:c3e4fdba8f7ba5fa7a8e94ac3290c113d03cf4b69342e2615e751b451529cc5e"},
+   {"t":"leaf","lzs":true,"ref":"tim:3cfa74d2df176b51882f6862b3b197a2e32830245c86c0727fcb39cdf82602a0"},
+   {"t":"leaf","lzs":true,"ref":"tim:4f874fc83222cf8e94e288bd4a3ba9331110598fbf1868f3c614b14aec6775bc"},
+   {"t":"marker","category":18},
+   {"t":"leaf","lzs":false,"ref":"bin:ce03ee66cd29aeee4e8ded778c26c8370d1c7584aed60538e5206a72bb1a33df"}
+  ]},
+  {"t":"marker","category":0},
+  {"t":"marker","category":0},
+  {"t":"marker","category":0},
+  {"t":"archive","lzs":false,"records":[
+   {"t":"leaf","lzs":true,"ref":"vab:de5987b81868e653ee01f5da897e8af49483fc201b7043a8de2c797592415955"},
+   {"t":"leaf","lzs":false,"ref":"vab:0a518593cb704dd5e87475e4aa88e2b87f9f180eb5065bd8686ae8d7a539ae9e"},
+   {"t":"leaf","lzs":true,"ref":"bin:e08733308c60581ba8cefda19edff91f3c1113381bc893f42292b07415a694bc"},
+   {"t":"marker","category":0},
+   {"t":"marker","category":0},
+   {"t":"marker","category":0},
+   {"t":"marker","category":0},
+   {"t":"marker","category":0},
+   {"t":"marker","category":0},
+   {"t":"marker","category":0},
+   {"t":"marker","category":0},
+   {"t":"marker","category":0},
+   {"t":"marker","category":0},
+   {"t":"marker","category":0},
+   {"t":"marker","category":0}
+  ]},
+  {"t":"archive","lzs":false,"records":[
+   {"t":"marker","category":0},
+   {"t":"marker","category":0},
+   {"t":"marker","category":0},
+   {"t":"marker","category":0},
+   {"t":"marker","category":0},
+   {"t":"marker","category":0},
+   {"t":"marker","category":0},
+   {"t":"marker","category":0},
+   {"t":"marker","category":0},
+   {"t":"marker","category":0},
+   {"t":"marker","category":0},
+   {"t":"marker","category":0},
+   {"t":"leaf","lzs":true,"ref":"vab:6fc082043b913e4aee5a3e9633920885eda59ba06a0d0f6838722bec336ec2ae"},
+   {"t":"leaf","lzs":false,"ref":"vab:4c36f8ef34b24c28c1555f8da659e5b82c81bdb29cb00e9b69655df2463042dd"},
+   {"t":"leaf","lzs":true,"ref":"bin:cd28f1577e530965988d9aeb6a7b0d66289483b8683642bfdb785c312b70470b"}
+  ]}
+ ]
+}

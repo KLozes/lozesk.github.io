@@ -1,0 +1,25 @@
+{
+ "schema": 1,
+ "file": "DATA/ST_SND.PAC",
+ "normalized_bytes": 131732,
+ "normalized_sha256": "06f9615db6697233c3a9bd058915b811a76e3b6e70741421ebf2d51cd03026be",
+ "records": [
+  {"t":"archive","lzs":false,"records":[
+   {"t":"marker","category":0},
+   {"t":"marker","category":0},
+   {"t":"marker","category":0},
+   {"t":"leaf","lzs":true,"ref":"vab:e726b5ea87ff9aeabcddd366869167425b1b80da9820fdece3e0fde06c8764a4"},
+   {"t":"leaf","lzs":false,"ref":"vab:85606b19b2f1a87ccb6690045f8b9377d394b79e1a4880e2e763bfa5b1091a2d"},
+   {"t":"leaf","lzs":true,"ref":"bin:4b1cac909259cb229d5ad00a79112bdc6c44c4063853b08521effbac8f170874"},
+   {"t":"marker","category":0},
+   {"t":"marker","category":0},
+   {"t":"marker","category":0},
+   {"t":"marker","category":0},
+   {"t":"marker","category":0},
+   {"t":"marker","category":0},
+   {"t":"marker","category":0},
+   {"t":"marker","category":0},
+   {"t":"marker","category":0}
+  ]}
+ ]
+}

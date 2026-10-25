@@ -1,0 +1,13 @@
+{
+ "schema": 1,
+ "file": "DATA/XA_TEST.PAC",
+ "normalized_bytes": 4028,
+ "normalized_sha256": "5c69151e5fbb1bcc4772f1b2f7351c0598d2dc13f0a976081f45807dcb1abcbd",
+ "records": [
+  {"t":"archive","lzs":true,"records":[
+   {"t":"leaf","lzs":false,"ref":"bin:b656daccea7934cb2421c5d171d21c024383e47f88faf404cb29aa3d81cf5283"},
+   {"t":"leaf","lzs":false,"ref":"bin:73b132f35c26be7150e08537d194e5cfa3f29ab0b3aff18c3f84053677e66a30"},
+   {"t":"leaf","lzs":false,"ref":"bin:6ef49da86bc4c58eb773014b20c21c659e49f7513179c842b490e36d74c1520f"}
+  ]}
+ ]
+}
